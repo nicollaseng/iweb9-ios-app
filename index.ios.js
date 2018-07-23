@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {createStackNavigator} from 'react-navigation'
 import MainView from './src/MainView.js'
 import ClientView from './src/ClientView.js'
+import CompanyView from './src/CompanyView.js'
 import NavigationBar from './src/NavigationBar.js'
 import {
   AppRegistry,
@@ -10,7 +11,8 @@ import {
 
 const AppNavigator = createStackNavigator({
   // home: MainView,
-  client: ClientView,
+  // client: ClientView,
+  company: CompanyView,
   navigationBar: NavigationBar
 })
 

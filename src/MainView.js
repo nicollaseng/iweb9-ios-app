@@ -26,7 +26,7 @@ export default class iweb9 extends Component {
             <TouchableOpacity onPress={() => this.props.navigation.navigate('client')}>
               <Image source={cliente} style={itemsStyle}/>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('company')}>
               <Image source={empresa} style={itemsStyle}/>
             </TouchableOpacity>
           </View>
