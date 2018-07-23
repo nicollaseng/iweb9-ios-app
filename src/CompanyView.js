@@ -35,7 +35,7 @@ export default class iweb9 extends Component {
                 <Image source={mission} style={missionLogo}/>
                 <Text style={textMissionLogo}>Missão</Text>
             </View>
-            <Text> Proporcionar a nossos clientes uma experiência única
+            <Text style={generalText}> Proporcionar a nossos clientes uma experiência única
                     e de qualidade </Text>
         </View>
         <View>
@@ -43,7 +43,7 @@ export default class iweb9 extends Component {
                 <Image source={vision} style={missionLogo}/>
                 <Text style={textMissionLogo}>Visão</Text>
             </View>
-            <Text> Tornar-se referência no desenvolvimento Web em âmbito 
+            <Text style={generalText}> Tornar-se referência no desenvolvimento Web em âmbito 
                 Regional e Nacional</Text>
         </View>
         <View>
@@ -51,7 +51,7 @@ export default class iweb9 extends Component {
                 <Image source={value} style={missionLogo}/>
                 <Text style={textMissionLogo}>Valores</Text>
             </View>
-            <Text> A alma de nosso sucesso está na satisfação de nossos clientes.
+            <Text style={generalText}> A alma de nosso sucesso está na satisfação de nossos clientes.
                 Nosso principal valor é impressionar nossos clientes com serviços
                 honestos e de qualidade
             </Text>
@@ -110,21 +110,27 @@ const styles = StyleSheet.create({
   },
   missionLogo: {
       width: 70,
-      height: 70
+      height: 70,
+      marginLeft: 8
   },
   textMissionLogo: {
     fontSize: 30,
     color: '#FF3333',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginLeft: 5
   },
   viewMissionLogo: {
       flexDirection: 'row',
       alignItems: 'center'
 
+  },
+  generalText: {
+      margin: 8,
+      textAlign: 'justify'
   }
 });
 
 const {logoStyle, generalView, viewLogoStyle,
         btnBackStyle, viewTextLogo, textLogo,
         textOne, textTwo, missionLogo, viewMissionLogo,
-        textMissionLogo} = styles
+        textMissionLogo, generalText} = styles
