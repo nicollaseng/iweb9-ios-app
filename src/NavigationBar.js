@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 
 const cliente = require('../img/clientes.png')
-const btnBack = require('../img/btn_voltar.png')
 
 export default class iweb9 extends Component {
     static navigationOptions = {
@@ -34,10 +33,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 35,
     padding: 20
-  },
-  btnBackStyle: {
-    marginTop: -50,
-    marginLeft: 10
   }
 });
 

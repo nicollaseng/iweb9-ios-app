@@ -3,7 +3,8 @@ import {
   StyleSheet,
   View,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  Text
 } from 'react-native';
 
 const logo = require('../img/logo_iweb9.png')
@@ -38,6 +39,9 @@ export default class iweb9 extends Component {
               <Image source={contato} style={itemsStyle}/>
             </TouchableOpacity>
           </View>
+          <View style={developerView}>
+            <Text style={developerText}>Desenvolvido por: Nicollas Linhares - iWeb9</Text>
+          </View>
         <View>
 
         </View>
@@ -68,8 +72,17 @@ const styles = StyleSheet.create({
   itemsStyle: {
     width: 150,
     height: 150
+  },
+  developerView: {
+    marginTop: 110,
+    alignItems: 'center'
+  },
+  developerText: {
+    color: 'grey',
+    fontSize: 16,
+    fontWeight: 'bold'
   }
 });
 
 const {logoStyle, generalView, viewLogoStyle,
-        generalViewButtons, itemsStyle} = styles
+        generalViewButtons, itemsStyle, developerView, developerText} = styles

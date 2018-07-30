@@ -12,10 +12,10 @@ import {
 } from 'react-native';
 
 const AppNavigator = createStackNavigator({
-  // home: MainView,
-  // client: ClientView,
-  // company: CompanyView,
-  // service: ServiceView,
+  home: MainView,
+  client: ClientView,
+  company: CompanyView,
+  service: ServiceView,
   contact: ContactView,
   navigationBar: NavigationBar
 })
